@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m3u8 to MP4 Converter</title>
+    <script src="/static/scripts.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #drop-area {
+            width: 80%;
+            max-width: 500px;
+            height: 150px;
+            border: 2px dashed #007bff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        #status {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        #download-link {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>m3u8 to MP4 Converter</h1>
+    <div id="drop-area">
+        Drag and drop the m3u8 link here, or paste it anywhere on the page.
+    </div>
+    <button id="download-btn">Download</button>
+    <p id="status"></p>
+    <a id="download-link" style="display: none;">Download Link</a>
+</body>
+</html>
